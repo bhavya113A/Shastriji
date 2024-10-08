@@ -1,0 +1,32 @@
+.about {
+    display: flex; 
+    justify-content: center; 
+    padding: 20px; 
+}
+  
+.about-text {
+    width: 70%; 
+    max-width: 800px; 
+    text-align: left; 
+}
+
+.banner-one{
+    margin-left: 20px;
+}
+
+.text-one{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-two {
+    max-width: 300px;        
+    word-wrap: break-word;    
+}
+
+.banner-btn{
+    color: #ffffff;
+    background-color: #a52a2a;
+    border-radius: 8%;
+}

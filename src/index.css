@@ -1,13 +1,127 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+.main-content {
+  flex: 1;
+  background-color: #dce0e2;
+}
+
+/* .nav-bar{
+  height: 85px;
+  background-color: brown;
+  margin-top: 0%;
+  color: blanchedalmond;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-bar ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+}
+
+.nav-bar li {
+  margin-top: 26px;
+  margin-right: 100px;
+}
+
+.nav-bar a{
+  text-decoration: none;
+  color: inherit;
+} */
+
+.nav-bar {
+  height: 85px;
+  background-color: brown;
+  margin-top: 0;
+  color: blanchedalmond;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Center items vertically */
+}
+
+.nav-bar ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+}
+
+.nav-bar li {
+  position: relative; /* Needed for dropdown positioning */
+  margin-top: 26px;
+  margin-right: 100px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px; /* Add some padding for better clickable area */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: absolute; /* Position dropdown relative to parent li */
+  top: 100%; /* Place it below the parent */
+  left: 0;
+  background-color: brown; /* Match navbar color */
+  padding: 10px 0; /* Add padding for dropdown */
+  display: none; /* Hide by default */
+  border-radius: 4px; /* Rounded corners */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Show dropdown when the parent li is hovered or active */
+.nav-bar li:hover .dropdown,
+.nav-bar li:focus-within .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+  margin: 0; /* Reset margin for dropdown items */
+}
+
+.dropdown a {
+  display: block; /* Make the entire area clickable */
+  padding: 8px 16px; /* Add padding for dropdown items */
+  color: blanchedalmond; /* Ensure text color is consistent */
+}
+
+.dropdown a:hover {
+  background-color: #5a2a2a; /* Change background on hover */
+}
+
+/* Optional: Add a transition for smooth appearance */
+.dropdown {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.nav-bar li:hover .dropdown {
+  opacity: 1; /* Fade in on hover */
+}
+
+
+
+
+.footer-one {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px; 
+  padding: 20px; 
+  color: #333; 
+  background-color: #f8f8f8; 
+}
+
+

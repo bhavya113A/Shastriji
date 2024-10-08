@@ -1,0 +1,29 @@
+.categories {
+    width: 70%; 
+    max-width: 800px; 
+    margin: 0 auto; /* Center the container */
+    text-align: left; 
+    display: flex;
+    flex-direction: column; 
+    color: #a52a2a;
+    margin-bottom: 1%;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.category-photo-one{
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+
+}
+
+.category-photo-two{
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
