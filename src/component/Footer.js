@@ -1,6 +1,11 @@
 import React from 'react';
 import './Footer.css';
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
+    const navigate = useNavigate(); 
+    const handlePrivacy = () => {
+        navigate('/privacy');
+    }
     return (
         <>
             <footer className="footer">
@@ -47,6 +52,18 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
+            <div className='footer-two'>
+                    <p className='copyright-text'>
+                        Copyright ©2024 Acharya Dhirendra Krishna Shastri.
+                    </p>
+                    <div className='footer-nav'>
+                        <ul>
+                            <li><a href='' onClick={handlePrivacy}>Privacy Policy</a></li>
+                            <li><a href='#'>Terms & Condition</a></li>
+                            <li><a href='#'>Disclaimer</a></li>
+                        </ul>
+                    </div>
+            </div>
         </>
        
     );

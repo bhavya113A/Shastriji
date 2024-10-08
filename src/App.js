@@ -7,6 +7,8 @@ import Banner from './component/Banner';
 import About from './component/About';
 import Catagory from './component/Catagory';
 import Videos from './component/Videos';
+import Contact from './component/Contact';
+import Privacy from './component/Privacy';
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           <Routes>
             <Route path="/" element={<><Banner /><Catagory /></>} /> 
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/Video" element={<Videos />} />
+            <Route path="/Privacy" element={<Privacy />} />
           </Routes>
         </div>
         <Footer />

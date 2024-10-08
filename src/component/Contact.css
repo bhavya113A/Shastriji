@@ -1,0 +1,16 @@
+.contact {
+    display: flex;
+    flex-direction: column; /* Align children in a column */
+    align-items: center;    /* Center align the children */
+    justify-content: center; /* Center the content vertically */
+    text-align: center;      /* Center the text */
+    padding: 20px;          /* Add some padding for aesthetics */
+}
+
+.contact-us {
+    margin-bottom: 10px; /* Add space between the header and paragraph */
+}
+
+.contact-text p {
+    max-width: 600px; /* Limit the width of the paragraph for better readability */
+}

@@ -47,7 +47,7 @@ export default function Header() {
              
              
             <li><a href='/'>Home</a></li>
-            <li><a href='/about' onClick={handleAboutClick}>About</a></li>
+            <li><a href='' onClick={handleAboutClick}>About</a></li>
             {/* <li>
              <a href="#" onClick={toggleDropdown}>Videos</a>
              {showDropdown && (
@@ -62,9 +62,16 @@ export default function Header() {
             <a href="/Video" onClick={toggleDropdown} className={showDropdown ? 'show-dropdown' : ''}>
               Videos <FontAwesomeIcon icon={faChevronDown} /> {/* Drop arrow icon */}
             </a>
+            {showDropdown && (
+              <ul className="dropdown">
+                <li><a href="https://www.youtube.com" target="_self" rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://www.facebook.com" target="_self" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_self" rel="noopener noreferrer">Instagram</a></li>
+              </ul>
+            )}
           </li>
-          <li><a href='/Gallery' onClick={handleGalleryClick}>Gallery</a></li>
-          <li><a href='/contact' onClick={handleContactClick}>Contact</a></li>
+          <li><a href='' onClick={handleGalleryClick}>Gallery</a></li>
+          <li><a href='' onClick={handleContactClick}>Contact</a></li>
         </ul>
       </nav>
     </>
